@@ -41,26 +41,27 @@ const Discussion = () => {
   ];
 
   return (
-    <div className="bg-white">
-      <header className="border-b border-gray-300 min-h-[78px] text-4xl text-black font-semibold text-center py-3">
+    <div className="min-h-screen bg-[#F7F8FA]">
+      <header className="bg-white border-b border-gray-300 min-h-[78px] text-4xl text-black font-semibold text-center py-3">
         External Agency
       </header>
       
       <div className="max-w-[1200px] mx-auto p-8">
-        <div className="bg-white rounded-lg p-6 shadow-sm">
-          <div className="flex justify-between items-center mb-4">
+        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm border border-[#E5E7EB]/60">
+          <div className="flex justify-between items-center mb-6">
             <div>
               <h1 className="text-2xl font-semibold">Project name</h1>
               <p className="text-gray-600">Discussion on Project Name</p>
             </div>
-            <div className="bg-[rgba(218,251,225,1)] text-[rgba(26,127,55,1)] px-4 py-1 rounded-full">
-              Approve
+            <div className="flex items-center gap-4">
+              <div className="flex gap-2">
+                <button className="bg-white border px-4 py-1 rounded-full">Newest</button>
+                <button className="bg-white border px-4 py-1 rounded-full">Oldest</button>
+              </div>
+              <div className="bg-[#DAF7E1] text-[#1A7F37] px-4 py-1 rounded-full">
+                Approve
+              </div>
             </div>
-          </div>
-
-          <div className="flex gap-4 mb-6">
-            <button className="bg-white border px-4 py-1 rounded-full">Newest</button>
-            <button className="bg-white border px-4 py-1 rounded-full">Oldest</button>
           </div>
 
           <div className="space-y-6">
@@ -87,13 +88,21 @@ const Discussion = () => {
             ))}
           </div>
 
-          <div className="mt-6">
-            <textarea
-              placeholder="Write a reply"
-              className="w-full border rounded-lg p-4 min-h-[100px]"
-            />
-            <div className="flex justify-end mt-4">
-              <Button>Comment</Button>
+          <div className="mt-8">
+            <div className="bg-[#F9F9F9] rounded-lg p-4">
+              <textarea
+                placeholder="Ask your questions"
+                className="w-full bg-transparent border-none outline-none resize-none"
+                rows={4}
+              />
+              <div className="flex items-center justify-between mt-4 border-t pt-4">
+                <div className="flex gap-2">
+                  <button className="p-2 hover:bg-gray-100 rounded">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/840c22dc74df49a5a134b6b564950834/e4affde7f2ae1c756d1c75a95ad06f816bde099c" alt="Attachment" className="w-5 h-5" />
+                  </button>
+                </div>
+                <Button>Comment</Button>
+              </div>
             </div>
           </div>
         </div>
