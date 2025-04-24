@@ -1,6 +1,8 @@
 
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { MessageSquare } from "lucide-react";
 
 interface ProjectInformation {
   program: string;
@@ -12,6 +14,7 @@ interface ProjectInformation {
 
 const ProjectDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   
   const projectInfo: ProjectInformation = {
     program: "Backend Developer",
@@ -22,64 +25,72 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div className="bg-white">
-      <header className="border-b border-gray-300 min-h-[78px] text-4xl text-black font-semibold text-center py-3">
+    <div className="min-h-screen bg-[#F7F8FA]">
+      <header className="bg-white border-b border-gray-300 min-h-[78px] text-4xl text-black font-semibold text-center py-3">
         External Agency
       </header>
       
       <div className="max-w-[1200px] mx-auto p-8">
-        <div className="bg-white rounded-lg p-6 shadow-sm">
-          <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-semibold">Project name</h1>
-            <div className="bg-[rgba(218,251,225,1)] text-[rgba(26,127,55,1)] px-4 py-1 rounded-full">
+        <div className="bg-white rounded-[10px] p-8 shadow-sm">
+          <div className="flex justify-between items-start mb-6">
+            <div>
+              <h1 className="text-2xl font-semibold mb-1">Project name</h1>
+              <p className="text-gray-600 text-sm">Date: YYYY/MM/DD at 00:00 AM</p>
+            </div>
+            <div className="bg-[#DAF7E1] text-[#1A7F37] px-4 py-1 rounded-full text-sm">
               Approve
             </div>
           </div>
+
+          <p className="text-gray-800 mb-8">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque,
+          </p>
           
-          <p className="text-gray-600 mt-2">Date: YYYY/MM/DD at 00:00 AM</p>
-          
-          <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4">Information</h2>
-            <div className="space-y-2">
-              <div className="flex gap-4">
-                <span className="w-40">Program</span>
-                <span>: {projectInfo.program}</span>
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold mb-4">Information</h2>
+            <div className="space-y-3">
+              <div className="flex">
+                <span className="w-48">Program</span>
+                <span className="text-gray-600">: {projectInfo.program}</span>
               </div>
-              <div className="flex gap-4">
-                <span className="w-40">Started Date</span>
-                <span>: {projectInfo.startedDate}</span>
+              <div className="flex">
+                <span className="w-48">Started Date</span>
+                <span className="text-gray-600">: {projectInfo.startedDate}</span>
               </div>
-              <div className="flex gap-4">
-                <span className="w-40">Identification No.</span>
-                <span>: {projectInfo.identificationNo}</span>
+              <div className="flex">
+                <span className="w-48">Identification No.</span>
+                <span className="text-gray-600">: {projectInfo.identificationNo}</span>
               </div>
-              <div className="flex gap-4">
-                <span className="w-40">Deadline Date</span>
-                <span>: {projectInfo.deadlineDate}</span>
+              <div className="flex">
+                <span className="w-48">Deadline Date</span>
+                <span className="text-gray-600">: {projectInfo.deadlineDate}</span>
               </div>
-              <div className="flex gap-4">
-                <span className="w-40">Selected Contractor</span>
-                <span>: {projectInfo.selectedContractor}</span>
+              <div className="flex">
+                <span className="w-48">Selected Contractor</span>
+                <span className="text-gray-600">: {projectInfo.selectedContractor}</span>
               </div>
             </div>
           </div>
 
-          <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4">Description:</h2>
-            <p className="text-gray-600">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum?
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold mb-4">Description:</h2>
+            <p className="text-gray-600 leading-relaxed">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
             </p>
           </div>
 
-          <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4">Documents Required:</h2>
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold mb-4">Documents Required:</h2>
             <div className="flex flex-wrap gap-4">
-              {[1, 2, 3, 4, 5].map((_, index) => (
-                <div key={index} className="bg-[rgba(249,249,249,1)] border border-gray-300 rounded-full px-4 py-2 flex items-center gap-2">
+              {[1, 2, 3, 4, 5].map((index) => (
+                <div
+                  key={index}
+                  className="bg-[#F9F9F9] border border-gray-300 rounded-full px-4 py-2 flex items-center gap-2 text-sm"
+                >
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets/840c22dc74df49a5a134b6b564950834/e4affde7f2ae1c756d1c75a95ad06f816bde099c"
                     alt="Document"
-                    className="w-5 h-5"
+                    className="w-4 h-4"
                   />
                   <span>Doc.pdf</span>
                 </div>
@@ -87,23 +98,20 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4">Remarks:</h2>
-            <p className="text-gray-600">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum?
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold mb-4">Remarks:</h2>
+            <p className="text-gray-600 leading-relaxed">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
             </p>
           </div>
 
-          <div className="mt-8">
-            <button className="bg-slate-900 text-white px-6 py-2 rounded-full flex items-center gap-2">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/840c22dc74df49a5a134b6b564950834/07fbdf35c1173419df80479a9a6c3f18128a1eb8"
-                alt="Discussion"
-                className="w-5 h-5"
-              />
-              Discussion
-            </button>
-          </div>
+          <button 
+            onClick={() => navigate(`/project/${id}/discussion`)}
+            className="bg-[#121826] text-white px-6 py-2 rounded-full flex items-center gap-2 text-sm hover:bg-black transition-colors"
+          >
+            <MessageSquare className="w-4 h-4" />
+            Discussion
+          </button>
         </div>
       </div>
     </div>
