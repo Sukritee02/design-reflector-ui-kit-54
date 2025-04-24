@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -32,7 +31,7 @@ const ProjectDetail = () => {
       
       <div className="max-w-[1200px] mx-auto p-8 space-y-2.5">
         {/* First Box: Project Details */}
-        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm">
+        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm border border-[#E5E7EB]/60">
           <div className="flex justify-between items-start mb-6">
             <div>
               <h1 className="text-2xl font-semibold mb-1">Project name</h1>
@@ -76,7 +75,7 @@ const ProjectDetail = () => {
           <div className="mb-8">
             <h2 className="text-lg font-semibold mb-4">Description:</h2>
             <p className="text-gray-600 leading-relaxed">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
             </p>
           </div>
 
@@ -109,7 +108,7 @@ const ProjectDetail = () => {
         </div>
 
         {/* Second Box: Remarks */}
-        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm">
+        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm border border-[#E5E7EB]/60">
           <h2 className="text-lg font-semibold mb-4">Remarks:</h2>
           <p className="text-gray-600 leading-relaxed">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
