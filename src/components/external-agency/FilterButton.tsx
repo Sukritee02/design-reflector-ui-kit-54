@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 interface FilterButtonProps {
@@ -29,7 +30,7 @@ const FilterButton: React.FC<FilterButtonProps> = ({
   return (
     <div className="relative">
       <div
-        className="bg-white border flex min-h-9 items-center gap-5 justify-center w-[143px] px-2.5 py-1.5 rounded-[5px] border-[rgba(110,126,146,1)] border-solid cursor-pointer"
+        className="border flex min-h-9 items-center gap-5 justify-center w-[143px] px-2.5 py-1.5 rounded-[5px] border-[rgba(110,126,146,1)] border-solid cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <img
@@ -46,7 +47,7 @@ const FilterButton: React.FC<FilterButtonProps> = ({
       </div>
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-full mt-1 bg-white border border-[rgba(110,126,146,1)] rounded-[5px] z-10">
+        <div className="absolute top-full left-0 w-full mt-1 border border-[rgba(110,126,146,1)] rounded-[5px] z-10">
           {options.map((option) => (
             <div
               key={option}

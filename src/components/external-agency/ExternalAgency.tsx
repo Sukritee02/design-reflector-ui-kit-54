@@ -132,7 +132,7 @@ const ExternalAgency: React.FC = () => {
               External Agency
               <br />
             </h1>
-            <div className="shadow-[0px_1px_4px_rgba(0,0,0,0.25)] self-stretch w-[133px] my-auto">
+            <div className="shadow-[0px_1px_4px_rgba(0,0,0,0.25)] self-stretch w-[133px] my-auto border border-gray-300 rounded-[10px]">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/840c22dc74df49a5a134b6b564950834/783df025172c9bda28ab127fdfbb017642408103?placeholderIfAbsent=true"
                 className="aspect-[3.32] object-contain w-[133px] z-10 rounded-[10px]"

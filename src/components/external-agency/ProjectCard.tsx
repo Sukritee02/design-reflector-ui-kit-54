@@ -1,3 +1,4 @@
+
 import React from "react";
 import StatusBadge from "./StatusBadge";
 import DocumentButton from "./DocumentButton";
@@ -58,10 +59,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
           </div>
           <div className="text-lg text-white whitespace-nowrap w-[180px]">
-            <div className="bg-slate-900 flex items-stretch gap-1 px-[18px] py-[7px] rounded-[28px] max-md:px-5">
+            <div className="bg-slate-900 flex items-center justify-center gap-1 px-[18px] py-[7px] rounded-[28px] max-md:px-5">
               <img
                 src={discussionIconSrc}
-                className="aspect-[1] object-contain w-5 shrink-0 my-auto"
+                className="aspect-[1] object-contain w-5 shrink-0 mr-2"
                 alt="Discussion icon"
               />
               <div>Discussion</div>

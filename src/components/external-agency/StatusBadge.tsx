@@ -1,3 +1,4 @@
+
 import React from "react";
 
 type StatusType = "Approve" | "Pending" | "Rejected";
@@ -35,7 +36,7 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status }) => {
   const { bg, border } = getStatusStyles();
 
   return (
-    <div className={`${bg} border p-2 rounded-[23px] ${border} border-solid`}>
+    <div className={`${bg} border p-2 rounded-[23px] ${border} border-solid flex justify-center items-center`}>
       {status}
     </div>
   );
