@@ -157,6 +157,7 @@ const ExternalAgency: React.FC = () => {
           {filteredProjects.map((project) => (
             <ProjectCard
               key={project.id}
+              id={project.id.toString()}
               projectName={project.projectName}
               status={project.status}
               date={project.date}
