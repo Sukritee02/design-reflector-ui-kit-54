@@ -30,8 +30,9 @@ const ProjectDetail = () => {
         External Agency
       </header>
       
-      <div className="max-w-[1200px] mx-auto p-8">
-        <div className="bg-white rounded-[10px] p-8 shadow-sm">
+      <div className="max-w-[1200px] mx-auto p-8 space-y-2.5">
+        {/* First Box: Project Details */}
+        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm">
           <div className="flex justify-between items-start mb-6">
             <div>
               <h1 className="text-2xl font-semibold mb-1">Project name</h1>
@@ -98,13 +99,6 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          <div className="mb-8">
-            <h2 className="text-lg font-semibold mb-4">Remarks:</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
-            </p>
-          </div>
-
           <button 
             onClick={() => navigate(`/project/${id}/discussion`)}
             className="bg-[#121826] text-white px-6 py-2 rounded-full flex items-center gap-2 text-sm hover:bg-black transition-colors"
@@ -112,6 +106,14 @@ const ProjectDetail = () => {
             <MessageSquare className="w-4 h-4" />
             Discussion
           </button>
+        </div>
+
+        {/* Second Box: Remarks */}
+        <div className="bg-[#F6FAFE] rounded-[10px] p-8 shadow-sm">
+          <h2 className="text-lg font-semibold mb-4">Remarks:</h2>
+          <p className="text-gray-600 leading-relaxed">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae unde eaque, quia dolor reprehenderit dicta et praesentium libero sed molestias quae dolorum? Enim cupiditate explicabo impedit tempora, aliquam neque?
+          </p>
         </div>
       </div>
     </div>
